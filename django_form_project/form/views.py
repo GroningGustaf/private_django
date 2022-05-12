@@ -10,3 +10,6 @@ def userSearch(request):
     all_entries = user.objects.all()
     return HttpResponse(all_entries)
 
+def specificUserSearch(request, user_id):
+    entry = user.objects.get(pk=user_id)
+    return render(request, "show.html", {"user": entry})
