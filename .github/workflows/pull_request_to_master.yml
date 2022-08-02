@@ -47,4 +47,4 @@ jobs:
       with:
         type: now
         target_branch: uat
-        github_token: ${{ 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 }}
+        github_token: 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
