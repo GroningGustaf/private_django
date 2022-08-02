@@ -7,8 +7,8 @@ class testAddition(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     def testAdditionFailed(self):
-        actual = addition(3, 8)
-        expected = 13 # incorrect
+        actual = addition(3, 9)
+        expected = 12
         self.assertEqual(actual, expected)
 
 # To run unittests - python3 -m unittest simple_functions.py
