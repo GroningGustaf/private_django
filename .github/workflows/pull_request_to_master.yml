@@ -47,5 +47,6 @@ jobs:
       with:
         type: now
         target_branch: master
-        github_token: ${{ secrets.MERGE_BOT_KEY }}
+      env:
+        github_token: ${{secrets.MERGE_BOT_KEY}}
 # ${{ secrets.MERGE_BOT_KEY }}
