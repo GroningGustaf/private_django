@@ -41,9 +41,10 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+
     - name: Merge staging -> uat
-        uses: devmasx/merge-branch@master
-        with:
-          type: now
-          target_branch: uat
-          github_token: ${{ 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 }}
+      uses: devmasx/merge-branch@master
+      with:
+        type: now
+        target_branch: uat
+        github_token: ${{ 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 }}
