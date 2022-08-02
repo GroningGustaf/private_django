@@ -3,8 +3,8 @@ name: Pull request into master
 on:
   pull_request:
     branches: [ "master" ]
-  push:
-    branches: [ "master"]
+  # push:
+  #   branches: [ "master"]
 
 permissions:
   contents: read
@@ -46,5 +46,5 @@ jobs:
       uses: devmasx/merge-branch@master
       with:
         type: now
-        target_branch: uat
+        target_branch: master
         github_token: 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
