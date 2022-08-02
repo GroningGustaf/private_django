@@ -47,4 +47,5 @@ jobs:
       with:
         type: now
         target_branch: master
-        github_token: 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
+        github_token: superSecretzzz
+# ${{ secrets.MERGE_BOT_KEY }}
