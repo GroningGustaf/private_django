@@ -1,0 +1,59 @@
+name: Merge
+
+on:
+  workflow_run:
+    workflows: [Pull request into master]
+    types:
+      - completed
+
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  deployments: write
+  id-token: write
+  issues: write
+  discussions: write
+  packages: write
+  pages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
+
+
+jobs:
+
+  merge2:
+    name: Merge pull request 
+    runs-on: ubuntu-latest
+    steps:
+    - name: Merge pull request
+      uses: juliangruber/merge-pull-request-action@v1
+      # if: github.actor == 'dependabot[bot]' # can set it to only react to certain users, AKA a github actions bot
+
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        number: 1
+        method: squash
+        repo: GroningGustaf/private_django
+
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - id: automerge
+        name: automerge
+        uses: "pascalgn/automerge-action@v0.15.3"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  GoodMerge:
+    name: good merge
+    runs-on: ubuntu-latest
+    steps:
+    - name: julian merge
+      uses: juliangruber/merge-pull-request-action@v1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        method: squash
+ 

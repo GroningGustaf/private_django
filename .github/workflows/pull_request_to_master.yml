@@ -73,39 +73,39 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
 
-  merge2:
-    name: Merge pull request 
-    needs: approve
-    runs-on: ubuntu-latest
-    steps:
-    - name: Merge pull request
-      uses: juliangruber/merge-pull-request-action@v1
-      # if: github.actor == 'dependabot[bot]' # can set it to only react to certain users, AKA a github actions bot
+  # merge2:
+  #   name: Merge pull request 
+  #   needs: approve
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: Merge pull request
+  #     uses: juliangruber/merge-pull-request-action@v1
+  #     # if: github.actor == 'dependabot[bot]' # can set it to only react to certain users, AKA a github actions bot
 
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        number: 1
-        method: squash
-        repo: GroningGustaf/private_django
+  #     with:
+  #       github-token: ${{ secrets.GITHUB_TOKEN }}
+  #       number: 1
+  #       method: squash
+  #       repo: GroningGustaf/private_django
 
-  automerge:
-    needs: approve
-    runs-on: ubuntu-latest
-    steps:
-      - id: automerge
-        name: automerge
-        uses: "pascalgn/automerge-action@v0.15.3"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  # automerge:
+  #   needs: approve
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - id: automerge
+  #       name: automerge
+  #       uses: "pascalgn/automerge-action@v0.15.3"
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  GoodMerge:
-    name: good merge
-    needs: approve
-    runs-on: ubuntu-latest
-    steps:
-    - name: julian merge
-      uses: juliangruber/merge-pull-request-action@v1
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        method: squash
+  # GoodMerge:
+  #   name: good merge
+  #   needs: approve
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: julian merge
+  #     uses: juliangruber/merge-pull-request-action@v1
+  #     with:
+  #       github-token: ${{ secrets.GITHUB_TOKEN }}
+  #       method: squash
  
