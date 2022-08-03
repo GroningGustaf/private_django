@@ -63,6 +63,7 @@ jobs:
         #repo: juliangruber/approve-pull-request-action # optional
 
   auto_approve: # I think this one is better, see in status if it approves
+    id: demo-1
     name: auto_approve
     needs: build
     runs-on: ubuntu-latest
@@ -83,6 +84,6 @@ jobs:
       # if: github.actor == 'dependabot[bot]' # can set it to only react to certain users, AKA a github actions bot
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        number: 1
+        number: ${{ steps.demo-1.outputs.pull-request-number }}
         method: squash
         repo: GroningGustaf/private_django
