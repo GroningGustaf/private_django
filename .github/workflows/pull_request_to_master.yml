@@ -62,6 +62,17 @@ jobs:
         number: 1
         #repo: juliangruber/approve-pull-request-action # optional
 
+  auto_approve: # I think this one is better, see in status if it approves
+    name: auto_approve
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+    - uses: hmarr/auto-approve-action@v2
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+
 #   merge:
 #     name: merge
 #     needs: approve
@@ -83,6 +94,8 @@ jobs:
     steps:
     - name: Merge pull request
       uses: juliangruber/merge-pull-request-action@v1
+      # if: github.actor == 'dependabot[bot]' # can set it to only react to certain users, AKA a github actions bot
+
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         number: 1
