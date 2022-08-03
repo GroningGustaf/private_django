@@ -50,15 +50,15 @@ jobs:
         pytest test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
 
   merge:
-    name: Merge pull request 
+    name: merge
     needs: build
     runs-on: ubuntu-latest
     steps:
-    - name: Merge pull request
-      uses: juliangruber/merge-pull-request-action@v1
+    - name: Merge staging -> uat
+      uses: devmasx/merge-branch@master
       with:
-        github-token: ${{ secrets.MERGE_BOT_TOKEN }}
-        number: 1
-        method: squash
-        repo: GroningGustaf/private_django
+        type: now
+        target_branch: master
+      env:
+        github_token: ${{ secrets.GITHUB_TOKEN }} # auto-generated token that comes with github actions
 # github_token: ${{ secrets.MERGE_BOT_KEY }}
