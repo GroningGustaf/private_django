@@ -62,11 +62,21 @@ jobs:
   #     env:
   #       github_token: ${{ secrets.GITHUB_TOKEN }} # auto-generated token that comes with github actions
 # github_token: ${{ secrets.MERGE_BOT_KEY }
-
+  approve:
+    name: approve pull request
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Approve Pull Request
+      uses: juliangruber/approve-pull-request-action@v1.1.1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        number: 1
+        #repo: juliangruber/approve-pull-request-action # optional
 
   merge2:
     name: Merge pull request 
-    needs: build # won't trigger unless build
+    needs: approve # won't trigger unless build
     runs-on: ubuntu-latest
     steps:
     - name: Merge pull request
