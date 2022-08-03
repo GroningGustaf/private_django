@@ -1,5 +1,5 @@
 import unittest
-from ci_cd.simple_functions import *
+from ci_cd.simple_functions import hello, addition, multiplication, theNextFunction
 class testAddition(unittest.TestCase):
     def testAdditionSuccess(self):
         actual = addition(3, 8)
