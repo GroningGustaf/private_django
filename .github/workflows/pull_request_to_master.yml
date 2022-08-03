@@ -89,6 +89,8 @@ jobs:
         repo: GroningGustaf/private_django
 
   automerge:
+    name: automerge
+    needs: approve
     runs-on: ubuntu-latest
     steps:
       - id: automerge
