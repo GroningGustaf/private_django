@@ -14,3 +14,4 @@ def multiplication(num1, num2):
 
 def theNextFunction():
     a = 35 # This is a commit
+    b = 477
