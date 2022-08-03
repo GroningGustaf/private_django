@@ -103,8 +103,8 @@ jobs:
     needs: approve
     runs-on: ubuntu-latest
     steps:
-      name: julian merge
-      uses: uses: juliangruber/merge-pull-request-action@v1
+    - name: julian merge
+      uses: juliangruber/merge-pull-request-action@v1
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         method: squash
