@@ -60,5 +60,5 @@ jobs:
         github-token: ${{ secrets.MERGE_BOT_TOKEN }}
         number: 1
         method: squash
-        repo: juliangruber/octokit-action
+        repo: GroningGustaf/private_django
 # github_token: ${{ secrets.MERGE_BOT_KEY }}
