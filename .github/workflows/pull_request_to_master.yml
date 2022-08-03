@@ -63,7 +63,6 @@ jobs:
         #repo: juliangruber/approve-pull-request-action # optional
 
   auto_approve: # I think this one is better, see in status if it approves
-    id: demo-1
     name: auto_approve
     needs: build
     runs-on: ubuntu-latest
@@ -71,6 +70,7 @@ jobs:
       pull-requests: write
     steps:
     - uses: hmarr/auto-approve-action@v2
+      id: demo-1
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
 
