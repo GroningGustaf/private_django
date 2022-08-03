@@ -49,16 +49,31 @@ jobs:
         pip install pytest-cov
         pytest test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
 
-  merge:
-    name: merge
-    needs: build
+  # merge:
+  #   name: merge
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: Merge staging -> uat
+  #     uses: devmasx/merge-branch@master
+  #     with:
+  #       type: now
+  #       target_branch: master
+  #     env:
+  #       github_token: ${{ secrets.GITHUB_TOKEN }} # auto-generated token that comes with github actions
+# github_token: ${{ secrets.MERGE_BOT_KEY }
+
+
+  merge2:
+    name: Merge pull request 
+    needs: build # won't trigger unless build
     runs-on: ubuntu-latest
     steps:
-    - name: Merge staging -> uat
-      uses: devmasx/merge-branch@master
+    - name: Merge pull request
+      uses: juliangruber/merge-pull-request-action@v1
       with:
-        type: now
-        target_branch: master
-      env:
-        github_token: ${{ secrets.GITHUB_TOKEN }} # auto-generated token that comes with github actions
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        number: 1
+        method: squash
+        repo: GroningGustaf/private_django
 # github_token: ${{ secrets.MERGE_BOT_KEY }}
