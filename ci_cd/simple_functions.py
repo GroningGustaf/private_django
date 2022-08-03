@@ -13,4 +13,4 @@ def multiplication(num1, num2):
     return num1 * num2
 
 def theNextFunction():
-    pass
+    a = 35 # This is a commit

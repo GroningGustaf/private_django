@@ -62,19 +62,19 @@ jobs:
         number: 1
         #repo: juliangruber/approve-pull-request-action # optional
 
-  merge:
-    name: merge
-    needs: approve
-    runs-on: ubuntu-latest
-    steps:
-    - name: Merge staging -> uat
-      uses: devmasx/merge-branch@master
-      with:
-        type: now
-        target_branch: master
-      env:
-        github_token: ${{ secrets.GITHUB_TOKEN }} # auto-generated token that comes with github actions
-#github_token: ${{ secrets.MERGE_BOT_KEY }
+#   merge:
+#     name: merge
+#     needs: approve
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Merge staging -> uat
+#       uses: devmasx/merge-branch@master
+#       with:
+#         type: now
+#         target_branch: master
+#       env:
+#         github_token: ${{ secrets.GITHUB_TOKEN }} # auto-generated token that comes with github actions
+# #github_token: ${{ secrets.MERGE_BOT_KEY }
 
   merge2:
     name: Merge pull request 
