@@ -83,17 +83,16 @@ jobs:
       # if: github.actor == 'dependabot[bot]' # can set it to only react to certain users, AKA a github actions bot
 
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         number: 1
         method: squash
         repo: GroningGustaf/private_django
 
   automerge:
-    name: automerge
-    needs: approve
     runs-on: ubuntu-latest
     steps:
-      - name: automerge
+      - id: automerge
+        name: automerge
         uses: "pascalgn/automerge-action@v0.15.3"
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          token: "${{ secrets.GITHUB_TOKEN }}"
