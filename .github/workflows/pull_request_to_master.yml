@@ -47,19 +47,6 @@ jobs:
         pip install pytest-cov
         pytest test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
 
-
-  approve:
-    name: approve pull request
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - name: Approve Pull Request
-      uses: juliangruber/approve-pull-request-action@v1.1.1
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        number: 1
-        #repo: juliangruber/approve-pull-request-action # optional
-
   auto_approve: # I think this one is better, see in status if it approves
     name: auto_approve
     needs: build
@@ -72,7 +59,7 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
 
-  merge:
+  merge: # Unable to work, error stating that "the branch is unmergable"
     name: Merge pull request 
     needs: approve
     runs-on: ubuntu-latest
