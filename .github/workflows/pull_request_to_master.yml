@@ -61,7 +61,7 @@ jobs:
 
   merge: # Unable to work, error stating that "the branch is unmergable"
     name: Merge pull request 
-    needs: approve
+    needs: auto_approve
     runs-on: ubuntu-latest
     steps:
     - name: Merge pull request
