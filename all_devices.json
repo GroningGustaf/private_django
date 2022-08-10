@@ -1,0 +1,453 @@
+Data: C22
+Headers
+Raw data
+{
+    "syslog_url": "/boapi/v0/company/1/device/C22/100165/syslog/2022/08/10",
+    "custom_name": "",
+    "standard": "1A",
+    "site": [
+        {
+            "1648630254": "MetyUA36EcuNCzXYmSEPRg==",
+            "1648706553": "wEi84A6rEcuSrx8eOG1x1A==",
+            "1649283623": "cDAxgBPrEcu4QKEH7Ty1iQ==",
+            "1651518469": "2AMA8Cg+EcuuQAsSp8yilw==",
+            "1651733209": "xIDVICoyEcu6NbuEuyJt9g=="
+        }
+    ],
+    "rssi": [
+        {
+            "1648707376": 87.09676861763,
+            "1648707967": 90.32257795333862,
+            "1648708073": 100.0,
+            "1648708117": 87.09676861763,
+            "1649142053": 100.0
+        }
+    ],
+    "disabled": false,
+    "indicator_url": "/boapi/v0/company/1/device/C22/100165/indicator/2022/08/10",
+    "spool_list_url": "/boapi/v0/company/1/device/C22/100165/spool/date/2022/08/10",
+    "ext_voltage": [
+        {
+            "1649142030": 12.607999801635742,
+            "1649142140": 12.616000175476074,
+            "1649283633": 12.631999969482422,
+            "1651484952": 16.007999420166016,
+            "1651731225": 12.62399959564209
+        }
+    ],
+    "gps_data": {
+        "sensor_direction": null,
+        "gps_timestamp_last_read": 1648707893,
+        "gps_long": null,
+        "gps_lat": null,
+        "gps_failed": true,
+        "gps_err": null
+    },
+    "standard_text": "SS 4604866 Spräng 250mm/s 5-300Hz",
+    "last_communication": 1651733245,
+    "calibration_date": "2019-09-01",
+    "last_changed_at": 1651733184,
+    "fw_last_updated": {
+        "time": 20049146413488,
+        "sync_diff": "undefined"
+    },
+    "external_power": true,
+    "type": "C22",
+    "triggers": [
+        {
+            "trig_recording_value": 2.0,
+            "trig_recording_enable": false,
+            "name": "V"
+        },
+        {
+            "trig_recording_value": 2.0,
+            "trig_recording_enable": false,
+            "name": "L"
+        },
+        {
+            "trig_recording_value": 2.0,
+            "trig_recording_enable": false,
+            "name": "T"
+        }
+    ],
+    "last_site": {
+        "transaction_id": "undefined",
+        "timestamp": {
+            "time": 23103026277280,
+            "sync_diff": "undefined"
+        },
+        "sensor_products": [],
+        "logger_product": {
+            "vib_sensor": {
+                "triggers": [
+                    {
+                        "trig_recording": {
+                            "level_other_units": 0.0,
+                            "level_mm_per_s": 2.0,
+                            "holdtime": "undefined",
+                            "global": "undefined",
+                            "enabled": false
+                        },
+                        "trig_alert": {
+                            "level_other_units": 0.0,
+                            "level_mm_per_s": 4.0,
+                            "holdtime": 0,
+                            "global": false,
+                            "enabled": false
+                        },
+                        "trig_alarm": {
+                            "level_other_units": 0.0,
+                            "level_mm_per_s": 10.0,
+                            "holdtime": 0,
+                            "global": false,
+                            "enabled": false
+                        }
+                    },
+                    {
+                        "trig_recording": {
+                            "level_other_units": 0.0,
+                            "level_mm_per_s": 2.0,
+                            "holdtime": "undefined",
+                            "global": "undefined",
+                            "enabled": false
+                        },
+                        "trig_alert": {
+                            "level_other_units": 0.0,
+                            "level_mm_per_s": 4.0,
+                            "holdtime": 0,
+                            "global": false,
+                            "enabled": false
+                        },
+                        "trig_alarm": {
+                            "level_other_units": 0.0,
+                            "level_mm_per_s": 10.0,
+                            "holdtime": 0,
+                            "global": false,
+                            "enabled": false
+                        }
+                    },
+                    {
+                        "trig_recording": {
+                            "level_other_units": 0.0,
+                            "level_mm_per_s": 2.0,
+                            "holdtime": "undefined",
+                            "global": "undefined",
+                            "enabled": false
+                        },
+                        "trig_alert": {
+                            "level_other_units": 0.0,
+                            "level_mm_per_s": 4.0,
+                            "holdtime": 0,
+                            "global": false,
+                            "enabled": false
+                        },
+                        "trig_alarm": {
+                            "level_other_units": 0.0,
+                            "level_mm_per_s": 10.0,
+                            "holdtime": 0,
+                            "global": false,
+                            "enabled": false
+                        }
+                    }
+                ],
+                "timepulse": false,
+                "standard": 259,
+                "pre_trig_time": 1,
+                "post_trig_time": 4,
+                "interval": 120,
+                "frequency_weight": 0,
+                "calibration": {
+                    "calib_id": 113,
+                    "calib_date": {
+                        "year": 2019,
+                        "month": 9,
+                        "day": 1
+                    },
+                    "calib_channels": [
+                        {
+                            "natural_freq": 4.5,
+                            "gains": [
+                                0.00018000000272877514,
+                                0.0010705499444156885,
+                                0.004666500259190798,
+                                0.009150000289082527
+                            ],
+                            "dc_offset": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "damping": 0.707099974155426,
+                            "a2": 1063310846,
+                            "a1": -2137001755
+                        },
+                        {
+                            "natural_freq": 4.5,
+                            "gains": [
+                                0.00018000000272877514,
+                                0.0010705499444156885,
+                                0.004666500259190798,
+                                0.009150000289082527
+                            ],
+                            "dc_offset": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "damping": 0.707099974155426,
+                            "a2": 1063310846,
+                            "a1": -2137001755
+                        },
+                        {
+                            "natural_freq": 4.5,
+                            "gains": [
+                                0.00018000000272877514,
+                                0.0010705499444156885,
+                                0.004666500259190798,
+                                0.009150000289082527
+                            ],
+                            "dc_offset": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "damping": 0.707099974155426,
+                            "a2": 1063310846,
+                            "a1": -2137001755
+                        }
+                    ]
+                }
+            },
+            "user_defined_name": "",
+            "type": 2,
+            "static_sensors": "undefined",
+            "static_indicators": [
+                {
+                    "value": {
+                        "value": {
+                            "cpu_id": "KAArABBRNDI3NzAy"
+                        }
+                    },
+                    "timestamp": {
+                        "time": 23103026277392,
+                        "sync_diff": "undefined"
+                    },
+                    "index": "undefined"
+                },
+                {
+                    "value": {
+                        "value": {
+                            "battery_data": {
+                                "battery_type": "undefined",
+                                "battery_sn": 0,
+                                "battery_manu_date": "undefined"
+                            }
+                        }
+                    },
+                    "timestamp": {
+                        "time": "undefined",
+                        "sync_diff": "undefined"
+                    },
+                    "index": 0
+                },
+                {
+                    "value": {
+                        "value": {
+                            "battery_data": {
+                                "battery_type": "undefined",
+                                "battery_sn": 0,
+                                "battery_manu_date": "undefined"
+                            }
+                        }
+                    },
+                    "timestamp": {
+                        "time": "undefined",
+                        "sync_diff": "undefined"
+                    },
+                    "index": 1
+                }
+            ],
+            "sound_sensor": "undefined",
+            "serial_number": 100165,
+            "remote_fw": "undefined",
+            "remote_command": "undefined",
+            "reboot": "undefined",
+            "orig_serial_number": "undefined",
+            "manufacture_date": {
+                "year": 2000,
+                "month": 1,
+                "day": 1
+            },
+            "logger": {
+                "user_text": "",
+                "timezone": "Europe/Stockholm",
+                "sms_number": "",
+                "ntp_host": "212.13.201.41",
+                "mon_state": 1,
+                "inhibit_connection": false,
+                "ext_power": 1,
+                "ext_apn": "undefined",
+                "connection_schedule": [
+                    0,
+                    3600,
+                    7200,
+                    10800,
+                    14400,
+                    18000,
+                    21600,
+                    25200,
+                    28800,
+                    32400,
+                    36000,
+                    39600,
+                    43200,
+                    46800,
+                    50400,
+                    54000,
+                    57600,
+                    61200,
+                    64800,
+                    68400,
+                    72000,
+                    75600,
+                    79200,
+                    82800
+                ],
+                "account_reference": "sigicom"
+            },
+            "hw_version": {
+                "state": "undefined",
+                "patch": 0,
+                "minor": 0,
+                "major": 0,
+                "build": "undefined"
+            },
+            "hw_last_updated": {
+                "year": 2000,
+                "month": 1,
+                "day": 1
+            },
+            "fw_version": {
+                "state": "ALPHA",
+                "patch": 0,
+                "minor": 6,
+                "major": 2,
+                "build": 0
+            },
+            "fw_last_updated": {
+                "time": 20049146413488,
+                "sync_diff": "undefined"
+            },
+            "ext_dyn_sensors": "undefined",
+            "config_last_updated": {
+                "time": 23103025458456,
+                "sync_diff": "undefined"
+            },
+            "config_id": "xIDVICoyEcu6NbuEuyJt9g==",
+            "config_change_source": 1,
+            "agenda": "undefined"
+        },
+        "logger_patch": "undefined"
+    },
+    "spool_url": "/boapi/v0/company/1/device/C22/100165/spool",
+    "battery_voltage": [
+        {
+            "1649283564": 15.008000373840332,
+            "1649283633": 15.015999794006348
+        },
+        {
+            "1649283564": 15.015999794006348
+        }
+    ],
+    "fw_version": {
+        "state": "ALPHA",
+        "patch": 0,
+        "minor": 6,
+        "major": 2,
+        "build": 0
+    },
+    "definitions_url": "/boapi/v0/company/1/device/C22/100165/definitions",
+    "self_url": "/boapi/v0/company/1/device/C22/100165",
+    "serial": 100165,
+    "changehistory_url": "/boapi/v0/company/1/device/C22/100165/changehistory",
+    "upload_schedule": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        21.0,
+        22.0,
+        23.0
+    ],
+    "simple_search_url": "/boapi/v0/company/1/device/C22/100165/simple_search",
+    "sio_url": "/boapi/v0/company/1/device/C22/100165/sio/2022/08/10",
+    "temperature_board": [
+        {
+            "1651484952": 23.76404571533203,
+            "1651485612": 24.91162872314453,
+            "1651518471": 23.892745971679688,
+            "1651519709": 35.71180725097656,
+            "1651731225": 23.431564331054688
+        }
+    ],
+    "config_id": "xIDVICoyEcu6NbuEuyJt9g==",
+    "user_input_url": "/boapi/v0/company/1/device/C22/100165/user_input",
+    "calibration_date": "2019-09-01",
+    "site_list_url": "/boapi/v0/company/1/device/C22/100165/site/2022/08",
+    "interval_url": "/boapi/v0/company/1/device/C22/100165/interval/2022/08/10",
+    "battery_type_name": "B50 Li-ion",
+    "post_trig_time": 4,
+    "assignment_url": "/boapi/v0/company/1/device/C22/100165/assignment",
+    "status_url": "/boapi/v0/company/1/device/C22/100165/status",
+    "backup_battery_voltage": [
+        {
+            "1651484952": 2.738642930984497,
+            "1651485612": 2.7646963596343994,
+            "1651518471": 2.9174129962921143,
+            "1651519709": 2.910769462585449,
+            "1651731225": 2.7365379333496094
+        }
+    ],
+    "transient_header_url": "/boapi/v0/company/1/device/C22/100165/transient_header/2022/08/10",
+    "from_plm": "false",
+    "battery_level": [
+        {
+            "1648558574": 0,
+            "1649283564": 52,
+            "1651484952": 0
+        }
+    ],
+    "interval": 120,
+    "pre_trig_time": 1,
+    "change_url": "/boapi/v0/company/1/device/C22/100165/change",
+    "humidity": [
+        {
+            "1651484952": 19.665283203125,
+            "1651485612": 18.658203125,
+            "1651518471": 20.824951171875,
+            "1651519709": 4.8489990234375,
+            "1651731225": 22.38134765625
+        }
+    ],
+    "message_rule_url": "/boapi/v0/company/1/device/C22/100165/message_rule"
+}

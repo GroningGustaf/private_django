@@ -1,0 +1,47 @@
+{
+    "self_url": "/boapi/v0/company/1/device/C22/102019/sio/2022/08/10",
+    "id": "10",
+    "data": [
+        {
+            "type": "GPS_POS",
+            "timestamp": 1660100728,
+            "time_diff": "undefined",
+            "rc_indicator": "undefined",
+            "infra_timestamp": 23377213161296,
+            "data_type": "bytes_data",
+            "data": {
+                "gps_long": 18.00151824951172,
+                "gps_lat": 59.280155181884766
+            },
+            "config_id": "412904a0-75c7-11cb-9701-e5c15e6845ef"
+        },
+        {
+            "type": "GPS_POS",
+            "timestamp": 1660100815,
+            "time_diff": "undefined",
+            "rc_indicator": "undefined",
+            "infra_timestamp": 23377216011688,
+            "data_type": "bytes_data",
+            "data": {
+                "gps_long": 18.001211166381836,
+                "gps_lat": 59.28030014038086
+            },
+            "config_id": "412904a0-75c7-11cb-9701-e5c15e6845ef"
+        },
+        {
+            "type": "CONFIGCHANGE_INDICATOR",
+            "timestamp": 1660115249,
+            "time_diff": "undefined",
+            "rc_indicator": {
+                "transaction_id": "ŽQ�vn\u0011˗\u0001��^hE�",
+                "status": 0,
+                "reason": "undefined",
+                "previous_config_id": "A)\u0004�u�\u0011˗\u0001��^hE�"
+            },
+            "infra_timestamp": 23377688956544,
+            "data_type": "event_source",
+            "data": 8,
+            "config_id": "c5c67970-766e-11cb-9702-e5c15e6845ef"
+        }
+    ]
+}
